@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=input, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ID<input type="text" id="id"><br>
+Name <input type="text" id="name"><br> 
+Class <input type="text" id="clas"><br>
+<button type="button" id="addBtn">Send FB to Database</button><br>
+<button type="button" id="updateBtn">Update Database</button><br>
+<button type="button" id="removeBtn">Remove Database</button><br>
+
+<div id="txt"></div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBHuoyFezvidJuwHVWIQZvRLYTPgacgzss",
+    authDomain: "testing-bc485.firebaseapp.com",
+    databaseURL: "https://testing-bc485.firebaseio.com",
+    projectId: "testing-bc485",
+    storageBucket: "testing-bc485.appspot.com",
+    messagingSenderId: "735434937557",
+    appId: "1:735434937557:web:15d9ef34f1a384ca67fe5c",
+    measurementId: "G-GNR3SK85Z8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
+
+<!-- ----------Tutorial CRUD Firebase----------- -->
+<!-- https://www.youtube.com/watch?v=2CtQEXwOPXw -->
